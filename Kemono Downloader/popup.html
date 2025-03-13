@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ダウンロード</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    #settings {
+      display: none;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="checkbox"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    #saveMessage {
+      color: green;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="downloadButton">画像をダウンロード</button>
+  <button id="settingsButton">設定</button>
+
+  <div id="settings">
+    <h3>Settings</h3>
+    <label for="folderName">フォルダー名</label>
+    <input type="text" id="folderName" placeholder="Enter folder name (e.g., Kemono DL Folder)">
+
+    <label for="groupByArtist">アーティスト別に分ける</label>
+    <input type="checkbox" id="groupByArtist">
+
+    <label for="oneClickDownload">1クリックでDL</label>
+    <input type="checkbox" id="oneClickDownload">
+
+    <button id="saveSettings">設定を保存</button>
+    <div id="saveMessage">保存に成功</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log('Kemono Downlorderの読み込みに成功!');

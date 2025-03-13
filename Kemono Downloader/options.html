@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ダウンロード設定</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"], input[type="checkbox"] {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #saveMessage {
+      color: green;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 10px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>ダウンロード設定</h2>
+  <label for="folderName">フォルダー名</label>
+  <input type="text" id="folderName" placeholder="フォルダ名を入力" value="Kemono Downloader">
+
+  <label for="groupByArtist">アーティスト別に分ける</label>
+  <input type="checkbox" id="groupByArtist">
+
+  <label for="oneClickDownload">1クリックでDL</label>
+  <input type="checkbox" id="oneClickDownload">
+
+  <button id="saveSettings">設定を保存</button>
+  <div id="saveMessage">保存に成功</div>
+
+  <script src="options.js"></script>
+</body>
+</html>
